@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q'RICO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="index.css">
+
+
+</head>
+<body>
+
+    
+    <!-- SECCION INICIO -->
+    <section id="inicio">
+        <header>
+            <div class="contenido-header">
+                <div class="logo">
+                    <h1>TIENDA EN LINEA</h1>
+                </div>
+                <nav id="nav">
+                    <ul>
+                        <li>
+                            <a href="#inicio" onclick="seleccionar()">
+                                <i class="fa-solid fa-house"></i>
+                                <span>Inicio</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Productos" onclick="seleccionar()">
+                                <i class="fa-solid fa-ice-cream"></i>
+                                <span>Productos</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Frutas y verduras" onclick="seleccionar()">
+                                <i class="fa-solid fa-utensils"></i>
+                                <span>Frutas y verduras</span>
+                            </a></li>
+                        <li>
+                            <a href="#Descripcion" onclick="seleccionar()">
+                                <i class="fa-solid fa-pen"></i>
+                                <span>Descripcion</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contacto" onclick="seleccionar()">
+                                <i class="fa-solid fa-comments"></i>
+                                <span>Contacto</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="social">
+                    <a href="tel:3122955158">
+                        <i class="fa-solid fa-phone"></i>3122955158
+                    </a>
+                    <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Finstagram.com%2Fva.ne2736%3Figshid%3DOGQ5ZDc2ODk2ZA%253D%253D%26fbclid%3DIwAR05-fQ33oNdf9z7MqdU0OzX3flvTpCR5bfU_sC3xDa3uT_HIeswdcMI2_w&h=AT2StBQ_uRa5QAg1updWjZQ2J3iuww1NcAc6Q1EqOf9Ut7Z_dA0exou9RmojkeTvOVVaO5e2hksxG-qYUPqFvm465H1ftXllkZPOyNbMWHcDMPmHXD9veXSzQw4nD18FJmuCwpZznc7ZpjD0pYPExQ"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/vane.giraldo.1840"><i class="fa-brands fa-facebook"></i></a> 
+                </div>
+                <div class="nav-responsive" id="bar" onclick="mostrarOcultarMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </header>
+        <!-- Carrusel -->
+        <div class="carrusel">
+            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround":true, "pageDots": false, "autoPlay": true}'>
+                <div class="gallery-cell" >
+                    <img src="img/tienda.jpg" alt="">
+                </div>
+                <div class="gallery-cell">
+                    <img src="img/hola.jpg" alt="">
+                </div>
+                <div class="gallery-cell">
+                    <img src="img/holi.jpg" alt="">
+                </div>
+                <div class="gallery-cell">
+                    <img src="img/hello.jpg" alt="">
+                </div>
+            </div>
+            <div class="info">
+                <h2>Varidad de productos </h2>
+                <p>Encontraras varios tipos de productos, veras varidad de frutas y verduras a una muy buena calidad
+                    tenfras en mejor servicio y la mejor garantia de ellos. </p>
+        
+            </div>
+        </div>
+
+    </section>
+
+    <!-- SECCION SABORES -->
+    <section id="Productos">
+        <h1>Productos</h1>
+        <div class="fila">
+            <img src="img/hello.jpg"
+            <div class="item">
+                
+                <div class="info">
+                    <h3>shampoo</h3>
+                    <p>16.500</p>
+                    <p>Los sahmpoo son de una muy buen acalidad para tu cabello.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icono">
+                    <img src="img/shampoo.jpg" class="img-icon">
+                </div>
+                <div class="info">
+                    <h3>Productos de belleza</h3>
+                    <p>14.600</p>
+                    <p>Nos enorgullece ofrecer productos de belleza de marcas
+                         de renombre que han demostrado su eficacia y compromiso con la calidad.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icono">
+                    <img src="img/images.jpg" class="img-icon">
+                </div>
+                <div class="info">
+                    <h3>Huevos</h3>
+                    <p>15.000</p>
+                    <p>Nos enorgullece ofrecer una experiencia de compra en línea fácil y conveniente.
+                        Puedes explorar nuestro catálogo de huevos frescos, .</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="fila">
+            <div class="item">
+                <div class="icono">
+                    <img src="img/huevo.jpg" class="img-icon">
+                </div>
+                <div class="info">
+                    <h3>Jabón de manoa</h3>
+                    <p>6.000</p>
+                    <p>Nuestros jabones de manos están cuidadosamente elaborados con ingredientes de la más alta calidad,
+                     formulados para limpiar, hidratar y mimar tus manos.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icono">
+                    <img src="img/manos.jpg" class="img-icon">
+                </div>
+                <div class="info">
+                    <h3>Servilletas</h3>
+                    <p>5.000</p>
+                    <p> Nuestras servilletas son suaves al tacto, absorbentes y están disponibles en una variedad de colores
+                     y diseños que complementarán tu decoración y personalidad.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icono">
+                    <img src="img/limpiua.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h3>cereales</h3>
+                    <p>18.500</p>
+                    <p> ofrecemos una amplia variedad de sabores y tipos de cereales.
+                     Ya sea que prefieras los cereales integrales, los orgánicos etc.</p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="icono">
+                <img src="img/alimento.jpg" class="img-medio">
+            </div>
+
+            <a href="vermas1.html" target="_blank"><button >Ver Más</button></a>
+
+    </section>
+
+    <!-- frutas y verduras -->
+    <section id="Frutas y verduras">
+       
+
+        <div class="fila">
+            <div class="item2">
+                <h1>Frutas y verduras</h1>
+                <img src="img/verduras.jpg" class="img-icon">
+                
+            </div>
+            <div class="item2">
+                <h3>Tomate</h3>
+                <p>5.000</p>
+                <img src="img/toma.jpg" class="img-icon">
+                
+            </div>
+            <div class="item2">
+                <h3>Cebolla</h3>
+                <p>3.500</p>
+                <img src="img/cebolla.jpg" class="img-icon">
+                
+            </div>
+        </div>
+        <div class="fila">
+            <div class="item2">
+                <h3>Avichuela</h3>
+                <p>5.600</p>
+                <img src="img/avuchuela.jpg" class="img-icon">
+               
+            </div>
+            <div class="item2">
+                <h3>Zanahoria</h3>
+                <p>5.000</p>
+                <img src="img/zanahorai.jpg" class="img-icon">
+            </div>
+            <div class="item2">
+                <h3>Limones</h3>
+                <p>1.000</p>
+                <img src="img/limon.jpg" class="img-icon">
+                
+            </div>
+            <div class="item2">
+                <h3>Repollo</h3>
+                <p>3.500</p>
+                <img src="img/repollo.jpg"  class="img-icon">
+            </div>
+        </div>
+
+         <a href="vermas2.html" target="_blank"><button >Ver Más</button></a>
+
+    </section>
+
+    <!-- SECCION BLOG -->
+    <section id="Descripcion">
+        <h1>Descripcion</h1>
+        <div class="galeria-blog js-flickity" data-flickity-options='{ "wrapAround":true, "pageDots": true}'>
+            <div class="gallery-cell" >
+                <div class="item8">
+                    <div class="foto">
+                        <img src="img/cheff1.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>frutas y verduras</h3>
+                        <p>Nuestra pasión es brindarte acceso a ingredientes frescos y deliciosos que enriquezcan 
+                        tu vida y te ayuden a llevar un estilo de vida saludable.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-cell" >
+                <div class="item9">
+                    <div class="foto">
+                        <img src="img/cheff2.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>¿Que beneficios tiene?</h3>
+                        <p> puedes navegar por nuestro amplio catálogo de productos desde la comodidad de tu hogar 
+                        o cualquier lugar que elijas. No más desplazamientos largos o tiempos de espera en la tienda.</p>
+                </div>
+            </div>
+            <div class="gallery-cell" >
+                <div class="item10">
+                    <div class="foto">
+                        <img src="img/cheff3.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>Los productos</h3>
+                        <p>tendr una gran baridad de nuestro amplio catalogo de productos  y podra comprarlos sin porblema.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO Y PIE DE PAGINA -->
+    <section id="contacto">
+        <div class="fila">
+            <div class="col">
+                <h1>TIENDA EN LINEA</h1>
+            </div>
+            <div class="col">
+                <h3>Menú</h3>
+                <a href="#inicio">Inicio</a>
+                <a href="#Productos">Productos</a>
+                <a href="#Frutas y verduras">Frutas y verduras</a>
+                <a href="#Descripcion">Descripcion</a>
+            </div>
+            <div class="col">
+                <h3>Personal</h3>
+                <a href="#">Vanessa G</a>
+                <a href="#">Zaira V.</a>
+                <a href="#">Esteban R.</a>
+            </div>
+            <div class="col">
+                <h3>Social Media</h3>
+                <div class="media">
+                    <i class="fa-brands fa-facebook"></i> <a href="#">Facebook</a>
+                </div>
+                <div class="media">
+                    <i class="fa-brands fa-instagram"></i> <a href="#">Instagram</a>
+                </div>
+            </div>
+            <div class="col">
+                <h3>Contacto</h3>
+                <input type="text" placeholder="Tu correo">
+                <input type="submit" class="enviar">
+            </div>
+        </div>
+
+    </section>
+    
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
